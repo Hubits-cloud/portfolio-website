@@ -26,6 +26,11 @@ div{
     background-color: #1D1D1F;
 }
 
+.text {
+    color: white;
+}
+
+
 .no-cursor {
     cursor: none !important;
 }
@@ -38,6 +43,9 @@ div{
     height: 100vh;
 }
 
+.thumbnail-img {
+    object-fit: cover;
+}
 .center_header {
     margin-bottom: -25px;
 }
