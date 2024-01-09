@@ -11,8 +11,9 @@
     <title>Portfolio</title>
 </head>
   <body>
-    <div id="trailer"></div>
-    
+    <div id="blob"></div>
+    <script src="blob.js"></script>
+    <div id="blur"></div>
     <div id="mouse"></div>
     <script src="mouse.js"></script>
     <div id="front-page">
@@ -52,7 +53,7 @@
                 <div class="card shadow-sm">
                   <img src="Pictures/cs50-harvard.jpeg" alt="Bootstrap" width="100%" height="225" class="border border-white" preserveaspectratio="xMidYMid slice" focusable="false">
                   <div class="card-body">
-                    <p class="card-text text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text text">Gennem CS50 har jeg lært grundlæggende computer videnskab, og hvordan man laver en database.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-sm btn-outline-secondary no-cursor text" onclick="window.location.href='https://pll.harvard.edu/course/cs50-introduction-computer-science';">View</button>
@@ -67,7 +68,7 @@
                 <div class="card shadow-sm">
                   <img src="Pictures/app_brewery.jpeg" alt="Bootstrap" width="100%" height="225" class="border border-white thumbnail-img" preserveaspectratio="xMidYMid slice" focusable="false">
                   <div class="card-body">
-                    <p class="card-text text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text text">Gennem App Brewery har jeg lært hvordan man laver web design intuativt og pent.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-sm btn-outline-secondary no-cursor text" onclick="window.location.href='https://www.londonappbrewery.com';">View</button>
@@ -82,7 +83,7 @@
                 <div class="card shadow-sm">
                   <img src="Pictures/hyperplexed.jpeg" alt="Bootstrap" width="100%" height="225" class="border border-white thumbnail-img" preserveaspectratio="xMidYMid slice" focusable="false">
                   <div class="card-body">
-                    <p class="card-text text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text text">Gennem hyperplexed har jeg lært en masse små og pæne features til websites.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-sm btn-outline-secondary no-cursor text" onclick="window.location.href='https://www.youtube.com/@Hyperplexed/featured';">View</button>
@@ -98,16 +99,17 @@
       
       </main>
    </div>
-   <div class="container">
-    <footer class="py-3 my-4">
+
+   </div>
+   <div class="container mt-auto">
+    <footer class="py-3 my-4 mt-auto">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Hjem</a></li>
-        <li class="nav-item"><a href="https://github.com/Hubits-cloud" class="nav-link px-2 text-body-secondary">GitHub</a></li>
-        <li class="nav-item"><a href="https://discordapp.com/users/hubits" class="nav-link px-2 text-body-secondary">Discord</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Om mig</a></li>
+        <li class="nav-item"><a href="https://discordapp.com/users/349892514611724299" class="nav-link px-2 text-body-secondary">Discord</a></li>
+        <li class="nav-item"><a href="https://github.com/Hubits-cloud" class="nav-link px-2 text-body-secondary">Github</a></li>
+        <li class="nav-item"><a href="support.html" class="nav-link px-2 text-body-secondary">Support</a></li>
       </ul>
-      <p class="text-center text-body-secondary text">© 2023 Tobias Madsen Belling</p>
+      <p class="text-center text-body-secondary" id="copyright">© 2023 Tobias Madsen Belling</p>
     </footer>
-  </div>
-  </body>
+   </div>
 </html>

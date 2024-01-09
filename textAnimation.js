@@ -1,7 +1,7 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ!#¤%&/()=?`@£$€{[]}+*あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもᚠᚢᚦᚨᚱᚹᚺᚻᚾᛁᛃᛇᛈᛉᛊᛋᛏᛒᛖᛗᛚᛜᛞᛟ";
 
 let interval = null;
-
+777847845895
 document.querySelector("#messenger").onmouseover = event => {  
   let iteration = 0;
   

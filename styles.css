@@ -1,16 +1,16 @@
-@keyframes _hover {
+@keyframes rotate {
     from {
-        height: 5px;
-        width: 5px;
-        border-radius: 5px;
+      rotate: 0deg;
     }
-
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
     to {
-        height: 10px;
-        width: 10px;
-        border-radius: 10;
+      rotate: 360deg;
     }
-} 
+}
 
 * {
     margin: 0;
@@ -21,16 +21,27 @@
 html, body {
     height: 100%;
     background-color: #1D1D1F;
+    z-index: 1;
 }
 
 div{
-    background-color: #1D1D1F;
+    
+    z-index: 1;
 }
 
 .text {
     color: white !important;
+    z-index: 4;
 }
 
+.card-body{
+    background-color: #1D1D1F;
+}
+
+.container {
+    position: sticky;
+    z-index: 4;
+}
 
 .no-cursor {
     cursor: none !important;
@@ -42,6 +53,7 @@ div{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    z-index: 4;
 }
 
 .thumbnail-img {
@@ -64,24 +76,44 @@ div{
 .h1-bottom {
     color: rgba(255, 255, 255, 1);
     text-align: center;
+    z-index: 4;
 }
 
-#trailer {
-    height: 20px;
-    width: 20px;
-    background-color: transparent;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: white;
-    
+#parent-footer {
     position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 1000;
+    bottom: 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
 
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 500ms ease;
+
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    backdrop-filter: blur(200px);
+}
+
+#blob {
+    background-color: black;
+    background: linear-gradient(
+      to right,
+      aquamarine,
+      mediumpurple
+      ) !important; 
+    height: 300px;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+    z-index: 2;
 }
 
 #mouse {
@@ -100,10 +132,15 @@ div{
     transition: opacity 500ms ease;
 }
 
+#copyright {
+    color: #E4E4E4;
+}
+
 #messenger,
 #name {
     color: rgba(255, 255, 255, 1);
     display: inline;
+    z-index: 4;
 }
 
 #front-page {
@@ -114,16 +151,14 @@ div{
     background-attachment: fixed;
     background-size: cover;
     background-color: #1D1D1F;
+    z-index: 1;
 }
 
-button:hover > #mouse {
-    animation: _hover;
-    animation-duration: 2s;
-    animation-delay: 5ms;
+#second-page {
+    position: static;
+    z-index: 4;
 }
-body:hover > #trailer {
-    opacity: 1;
-}
+
 body:hover > #mouse {
     opacity: 1;
 }
